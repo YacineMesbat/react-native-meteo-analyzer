@@ -53,18 +53,41 @@ npm install -g react-native-cli
 Run your emulator, should be located in your **$HOME/Android/Sdk/emulator** folder:
 
 ```bash
-emu -avd Nexus_5X_API_28_x86
+> emu -avd Nexus_5X_API_28_x86
+
+...
+emulator: INFO: boot completed
 ```
 
 Then, run the development server:
 
 ```bash
-react-native start
+> react-native start
+
+...
+Looking for JS files in
+   /Path/To/The/Project 
+
+Loading dependency graph, done.
+```
+
+Link assets:
+
+```bash
+> react-native link
+
+rnpm-install info Linking assets to ios project 
+rnpm-install WARN ERRGROUP Group 'Resources' does not exist in your Xcode project. We have created it automatically for you.
+rnpm-install info Linking assets to android project 
+rnpm-install info Assets have been successfully linked to your project 
 ```
 
 Finally, build and install the app:
 ```bash
-react-native run-android
+> react-native run-android
+
+...
+BUILD SUCCESSFUL in 2s
 ```
 
 # Built with 
